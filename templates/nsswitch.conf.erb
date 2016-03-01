@@ -15,14 +15,14 @@
 #
 # Valid entries include:
 #
-#	nisplus			Use NIS+ (NIS version 3)
-#	nis			Use NIS (NIS version 2), also called YP
-#	dns			Use DNS (Domain Name Service)
-#	files			Use the local files
-#	db			Use the local database (.db) files
-#	compat			Use NIS on compat mode
-#	hesiod			Use Hesiod for user lookups
-#	[NOTFOUND=return]	Stop searching if not found so far
+#  nisplus      Use NIS+ (NIS version 3)
+#  nis      Use NIS (NIS version 2), also called YP
+#  dns      Use DNS (Domain Name Service)
+#  files      Use the local files
+#  db      Use the local database (.db) files
+#  compat      Use NIS on compat mode
+#  hesiod      Use Hesiod for user lookups
+#  [NOTFOUND=return]  Stop searching if not found so far
 #
 
 # To use db, put the "db" in front of "files" for entries you want to be
@@ -30,53 +30,53 @@
 
 
 <% if @passwd -%>
-passwd:		<%= [*@passwd].join(" ") %>
+passwd:    <%= [*@passwd].join(" ") %>
 <% end -%>
 <% if @shadow -%>
-shadow: 	<%= [*@shadow].join(" ") %>
+shadow:   <%= [*@shadow].join(" ") %>
 <% end -%>
 <% if @group -%>
-group:		<%= [*@group].join(" ") %>
+group:    <%= [*@group].join(" ") %>
 <% end -%>
 <% if @hosts -%>
-hosts: 		<%= [*@hosts].join(" ") %>
+hosts:     <%= [*@hosts].join(" ") %>
 <% end -%>
 <% if @bootparams -%>
-bootparams: 	<%= [*@bootparams].join(" ") %>
+bootparams:   <%= [*@bootparams].join(" ") %>
 <% end -%>
 <% if @ethers -%>
-ethers: 	<%= [*@ethers].join(" ") %>
+ethers:   <%= [*@ethers].join(" ") %>
 <% end -%>
 <% if @netmasks -%>
-netmasks: 	<%= [*@netmasks].join(" ") %>
+netmasks:   <%= [*@netmasks].join(" ") %>
 <% end -%>
 <% if @networks -%>
-networks: 	<%= [*@networks].join(" ") %>
+networks:   <%= [*@networks].join(" ") %>
 <% end -%>
 <% if @protocols -%>
-protocols: 	<%= [*@protocols].join(" ") %>
+protocols:   <%= [*@protocols].join(" ") %>
 <% end -%>
 <% if @rpc -%>
-rpc: 		<%= [*@rpc].join(" ") %>
+rpc:     <%= [*@rpc].join(" ") %>
 <% end -%>
 <% if @services -%>
-services: 	<%= [*@services].join(" ") %>
+services:   <%= [*@services].join(" ") %>
 <% end -%>
 <% if @netgroup -%>
-netgroup: 	<%= [*@netgroup].join(" ") %>
+netgroup:   <%= [*@netgroup].join(" ") %>
 <% end -%>
 <% if @publickey -%>
-publickey: 	<%= [*@publickey].join(" ") %>
+publickey:   <%= [*@publickey].join(" ") %>
 <% end -%>
 <% if @automount -%>
-automount: 	<%= [*@automount].join(" ") %>
+automount:   <%= [*@automount].join(" ") %>
 <% end -%>
 <% if @aliases -%>
-aliases: 	<%= [*@aliases].join(" ") %>
+aliases:   <%= [*@aliases].join(" ") %>
 <% end -%>
 <% if @sudoers -%>
-sudoers: 	<%= [*@sudoers].join(" ") %>
+sudoers:   <%= [*@sudoers].join(" ") %>
 <% end -%>
 <% if @gshadow -%>
-gshadow: 	<%= [*@gshadow].join(" ") %>
+gshadow:   <%= [*@gshadow].join(" ") %>
 <% end -%>
