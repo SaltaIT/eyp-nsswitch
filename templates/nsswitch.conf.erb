@@ -30,16 +30,16 @@
 
 
 <% if @passwd -%>
-passwd:    <%= [*@passwd].join(" ") %>
+passwd:     <%= [*@passwd].join(" ") %>
 <% end -%>
 <% if @shadow -%>
-shadow:   <%= [*@shadow].join(" ") %>
+shadow:     <%= [*@shadow].join(" ") %>
 <% end -%>
 <% if @group -%>
-group:    <%= [*@group].join(" ") %>
+group:      <%= [*@group].join(" ") %>
 <% end -%>
 <% if @hosts -%>
-hosts:     <%= [*@hosts].join(" ") %>
+hosts:      <%= [*@hosts].join(" ") %>
 <% end -%>
 <% if @bootparams -%>
 bootparams:   <%= [*@bootparams].join(" ") %>
@@ -69,7 +69,7 @@ netgroup:   <%= [*@netgroup].join(" ") %>
 publickey:   <%= [*@publickey].join(" ") %>
 <% end -%>
 <% if @automount -%>
-automount:   <%= [*@automount].join(" ") %>
+automount:  <%= [*@automount].join(" ") %>
 <% end -%>
 <% if @aliases -%>
 aliases:   <%= [*@aliases].join(" ") %>
