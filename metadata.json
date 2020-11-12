@@ -4,9 +4,9 @@
   "author": "eyp",
   "summary": "manages nsswitch.conf",
   "license": "Apache-2.0",
-  "source": "https://github.com/NTTCom-MS/eyp-nsswitch",
-  "issues_url": "https://github.com/NTTCom-MS/eyp-nsswitch/issues",
-  "project_page": "https://github.com/NTTCom-MS/eyp-nsswitch",
+  "source": "https://github.com/SaltaIT/eyp-nsswitch",
+  "issues_url": "https://github.com/SaltaIT/eyp-nsswitch/issues",
+  "project_page": "https://github.com/SaltaIT/eyp-nsswitch",
   "dependencies": [
     {"version_requirement":">= 1.0.0 < 9.9.9","name":"puppetlabs/stdlib"}
   ],
